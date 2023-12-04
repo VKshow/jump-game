@@ -113,7 +113,7 @@ const Instructions = () => {
 //instructions finish
 
 const App = () => {
-  const charPosition = useRef(50);
+  const charPosition = useRef(100);
   const charRef = useRef();
   const enemyRefs = useRef([]);
   const [enemyPosition, setEnemyPosition] = useState(-10000);
@@ -156,9 +156,9 @@ const App = () => {
       if (event.button === 0 && gameStart) {
         console.log("Left mouse button clicked!");
         if (charPosition.current > windowHeight - 10) {
-          charPosition.current = 10;
+          charPosition.current = 70;
         } else {
-          charPosition.current += 50;
+          charPosition.current += 70;
         }
       }
     };
@@ -172,8 +172,8 @@ const App = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      if (charPosition.current > 50) {
-        charPosition.current -= 20;
+      if (charPosition.current > 100) {
+        charPosition.current -= 25;
       }
     }, 100);
 
