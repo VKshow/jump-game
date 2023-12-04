@@ -56,7 +56,10 @@ const Char = ({ charPosition, charRef }) => {
 
 const Enemy = ({ enemyRefs, enemyPosition, enemyArr }) => {
   return (
-    <div className="enemyContainer" style={{ right: `${enemyPosition}px` }}>
+    <div
+      className="enemyContainer"
+      style={{ right: `${enemyPosition}px`, height: `100Vh` }}
+    >
       {enemyArr.map((enemy, i) => {
         return (
           <div
