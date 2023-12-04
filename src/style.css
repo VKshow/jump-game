@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+  }
+  .btn-group {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-left: 25px;
+  }
+  
+  .btn:hover {
+    background-color: #ffd633;
+  }
+  
+  .btn:active {
+    background-color: #ff9900;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .play-field {
+    /* background: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L3Jhd3BpeGVsX29mZmljZV8yMl9zaW1wbGlmaWVkX2VtcHR5X2NvbG9zc2V1bV9taW5pbWFsaXN0X3dhbGxwYV9mYjViMjYyMS03YTJiLTQwZmEtODcwNC1hZTQyMGIxNzU4ZTRfMS5qcGc.jpg")
+      no-repeat center/cover; */
+    background: url("./bg.webp") no-repeat center center / cover;
+  
+    height: 100vh;
+    position: relative;
+  }
+  
+  .char {
+    width: 65px;
+    height: 65px;
+    background: transparent;
+    position: absolute;
+    left: 365px;
+    bottom: 40px;
+  }
+  .char img {
+    width: 100%;
+    object-fit: contain;
+    background: transparent;
+  }
+  .enemyContainer {
+    position: absolute;
+    right: -9966px;
+    bottom: 0px;
+    /* display: flex; */
+    /* left: 1364px; */
+    width: 10000px;
+    height: 100%;
+    /* transform: translateX(50%); */
+  }
+  .enemy {
+    position: absolute;
+    top: 195px;
+    left: 1000px;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+  }
+  .enemy img {
+    width: 100%;
+    object-fit: contain;
+    background: transparent;
+  }
+  .coll-message {
+    margin-left: 20px;
+    font-family: "Press Start 2P", cursive;
+    color: #ff0000;
+    background-color: #000000;
+    border: 4px solid #ff0000;
+    padding: 20px;
+    text-align: center;
+    font-size: 74px;
+    animation: blink 1s linear infinite;
+    z-index: 3;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .game-timer {
+    margin-left: 20px;
+    background-color: #ff0000;
+    border: 4px solid #ffd800;
+    color: #ffffff;
+    font-family: "Press Start 2P", cursive;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .instr-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    border: 4px solid #3b0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .instr-block-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: "Press Start 2P", cursive;
+  }
+  
+  .info-img {
+    width: 50px;
+  }
+  
+  .info-img img {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .info-content {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
