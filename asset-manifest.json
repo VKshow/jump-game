@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/jump-game/static/css/main.bdba35ed.css",
-    "main.js": "/jump-game/static/js/main.fb4f26f3.js",
+    "main.css": "/jump-game/static/css/main.81fe8acd.css",
+    "main.js": "/jump-game/static/js/main.92392988.js",
     "static/media/mouse.png": "/jump-game/static/media/mouse.279f16266b8d3dae481a.png",
     "static/media/enemy.gif": "/jump-game/static/media/enemy.e24d010a0fcc85c3016a.gif",
     "static/media/bg.webp": "/jump-game/static/media/bg.7a5ba3083dba3ae34e5b.webp",
     "static/media/char.gif": "/jump-game/static/media/char.d1e1948bd66e2480bd61.gif",
     "static/media/arrow.png": "/jump-game/static/media/arrow.5e657ccc52265cc5ae03.png",
     "index.html": "/jump-game/index.html",
-    "main.bdba35ed.css.map": "/jump-game/static/css/main.bdba35ed.css.map",
-    "main.fb4f26f3.js.map": "/jump-game/static/js/main.fb4f26f3.js.map"
+    "main.81fe8acd.css.map": "/jump-game/static/css/main.81fe8acd.css.map",
+    "main.92392988.js.map": "/jump-game/static/js/main.92392988.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdba35ed.css",
-    "static/js/main.fb4f26f3.js"
+    "static/css/main.81fe8acd.css",
+    "static/js/main.92392988.js"
   ]
 }
